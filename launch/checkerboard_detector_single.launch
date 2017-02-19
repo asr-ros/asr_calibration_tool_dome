@@ -1,0 +1,19 @@
+ <launch>
+ <arg name="CAMERA" default="/stereo/left" />
+  <arg name="CAMERA_FRAME_ID" default="camera_left_frame" />
+  <group ns="checkerboard_detector" clear_params="true">
+    <param name="display" type="int" value="1"/>
+    <param name="rect0_size_x" type="double" value="0.015"/>
+    <param name="rect0_size_y" type="double" value="0.015"/>
+    <param name="grid0_size_x" type="int" value="9"/>
+    <param name="grid0_size_y" type="int" value="12"/>
+    <param name="use_P" value="true" />
+    <param name="invert_color" value="false" />
+    <param name="type0" type="string" value="data/ricebox.kinbody.xml"/>
+    <node pkg="checkerboard_detector" name="checkerboard_detector"
+          type="checkerboard_detector">
+      <remap from="camera_info" to="$(arg CAMERA)/camera_info"/>
+      <remap from="image" to="$(arg CAMERA)/image_rect"/>
+    </node>
+  </group>
+</launch>

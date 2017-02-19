@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>asr_calibration_tool_dome</name>
+  <version>1.0.0</version>
+  <description>Tracking the data for the kinematic chain optimzier tool</description>
+  <author>Heller Florian, Stöckle Patrick, Wittenbeck Valerij</author>
+  <maintainer email="asr-ros@lists.kit.edu">Meißner Pascal</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>asr_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>image_transport</build_depend>
+
+  <run_depend>asr_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>image_transport</run_depend>
+
+</package>

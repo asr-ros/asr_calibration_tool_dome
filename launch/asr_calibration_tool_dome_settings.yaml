@@ -1,0 +1,5 @@
+ptu_topic: /ptu_driver/state
+fob_topic: /fob_objects
+cbd_topic: /checkerboard_detector/objectdetection_pose
+
+output_file_path: ~/calibDome.data
