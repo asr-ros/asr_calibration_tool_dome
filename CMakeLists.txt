@@ -11,6 +11,7 @@ find_package(
 	sensor_msgs 
 	std_msgs 
 	image_transport
+	checkerboard_detector
 )
 
 find_package(Boost REQUIRED COMPONENTS 
@@ -19,7 +20,7 @@ find_package(Boost REQUIRED COMPONENTS
 )
 
 catkin_package(
-    CATKIN_DEPENDS asr_msgs roscpp sensor_msgs std_msgs image_transport
+    CATKIN_DEPENDS asr_msgs roscpp sensor_msgs std_msgs image_transport checkerboard_detector
     DEPENDS Boost
 )
 
