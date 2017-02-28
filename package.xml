@@ -2,7 +2,7 @@
 <package>
   <name>asr_calibration_tool_dome</name>
   <version>1.0.0</version>
-  <description>Tracking the data for the kinematic chain optimzier tool</description>
+  <description>This package provides several tools for calibraiting the kinematic chain of the PdB-Dome. It provides a data-tracking for recording 6D positions of Flock of Birds data glove and a checkerboard mounted on it. So the kinematic chain is closed. The recorded data is written to a file and can be used for the asr_calibraition_tool_dome.</description>
   <author>Heller Florian, Stöckle Patrick, Wittenbeck Valerij</author>
   <maintainer email="asr-ros@lists.kit.edu">Meißner Pascal</maintainer>
   <license>BSD</license>
