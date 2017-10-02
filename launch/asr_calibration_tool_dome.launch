@@ -2,6 +2,6 @@
 	<env name="ROSCONSOLE_CONFIG_FILE"
              value="$(find asr_calibration_tool_dome)/launch/rosconsole.config"/>
     <node pkg="asr_calibration_tool_dome" type="asr_calibration_tool_dome" name="calib_tracker_node" respawn="false" output="screen">
-        <rosparam file="$(find asr_calibration_tool_dome)/launch/asr_calibration_tool_dome_settings.yaml"/>
+        <rosparam file="$(find asr_calibration_tool_dome)/param/asr_calibration_tool_dome_settings.yaml"/>
     </node>
 </launch> 
